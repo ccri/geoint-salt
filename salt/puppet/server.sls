@@ -90,7 +90,7 @@ puppet-service:
 s3-puppet-modules:
   archive.extracted:
     - name: /etc/puppet/
-    - source: s3://geoint-data/bootstrap/puppet-modules.tgz
+    - source: s3://geobench/bootstrap/puppet-modules.tgz
     - source_hash: md5=da675bb0eecdb65f5ae2dcf833f238d3
     - archive_format: tar
     - if_missing: /etc/puppet/modules/java
@@ -104,14 +104,14 @@ s3-puppet-modules:
 
 /etc/puppet/files/jdk-7u79-linux-x64.tar.gz:
   file.managed:
-    - source: s3://geoint-data/bootstrap/jdk-7u79-linux-x64.tar.gz
+    - source: s3://geobench/bootstrap/jdk-7u79-linux-x64.tar.gz
     - source_hash: md5=9222e097e624800fdd9bfb568169ccad
     - user: puppet
     - group: puppet
 
 /etc/puppet/files/accumulo-1.6.4-bin.tar.gz:
   file.managed:
-    - source: s3://geoint-data/bootstrap/accumulo-1.6.4-bin.tar.gz
+    - source: s3://geobench/bootstrap/accumulo-1.6.4-bin.tar.gz
     - source_hash: md5=530dfe488d5c2ee415b514ce72baa691
     - user: puppet
     - group: puppet
