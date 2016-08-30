@@ -8,3 +8,5 @@ base:
   'worker*':
     - mounts.worker
     - puppet.client
+  web:
+    - puppet.client
