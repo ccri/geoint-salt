@@ -45,12 +45,15 @@ puppet-service:
     - source: salt://puppet/server/hieradata/default.yaml
     - user: puppet
     - group: puppet
+    - replace: False
 
 /etc/puppet/hieradata/classes.yaml:
   file.managed:
     - source: salt://puppet/server/hieradata/classes.yaml
     - user: puppet
     - group: puppet
+    - replace: False
+
 
 /etc/puppet/hieradata/hosts:
   file.directory:
@@ -62,30 +65,35 @@ puppet-service:
     - source: salt://puppet/server/hieradata/hosts/head.yaml
     - user: puppet
     - group: puppet
+    - replace: False
 
 /etc/puppet/hieradata/hosts/worker1.yaml:
   file.managed:
     - source: salt://puppet/server/hieradata/hosts/worker1.yaml
     - user: puppet
     - group: puppet
+    - replace: False
 
 /etc/puppet/hieradata/hosts/worker2.yaml:
   file.managed:
     - source: salt://puppet/server/hieradata/hosts/worker2.yaml
     - user: puppet
     - group: puppet
+    - replace: False
 
 /etc/puppet/hieradata/hosts/worker3.yaml:
   file.managed:
     - source: salt://puppet/server/hieradata/hosts/worker3.yaml
     - user: puppet
     - group: puppet
+    - replace: False
 
 /etc/puppet/hieradata/hosts/worker4.yaml:
   file.managed:
     - source: salt://puppet/server/hieradata/hosts/worker4.yaml
     - user: puppet
     - group: puppet
+    - replace: False
 
 s3-puppet-modules:
   archive.extracted:
