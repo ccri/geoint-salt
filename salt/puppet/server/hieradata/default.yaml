@@ -1,6 +1,6 @@
 # java variables
-java::version_major : 7
-java::version_update : 79
+java::version_major : 8
+java::version_update : 101
 
 # hadoop variables
 hadoop::namenode : head

@@ -110,10 +110,10 @@ s3-puppet-modules:
     - user: puppet
     - group: puppet
 
-/etc/puppet/files/jdk-7u79-linux-x64.tar.gz:
+/etc/puppet/files/jdk-8u101-linux-x64.tar.gz:
   file.managed:
-    - source: s3://geoint-data/bootstrap/jdk-7u79-linux-x64.tar.gz
-    - source_hash: md5=9222e097e624800fdd9bfb568169ccad
+    - source: s3://geoint-data/bootstrap/jdk-8u101-linux-x64.tar.gz
+    - source_hash: md5=a7ab8014716b0dac3adcaf5342167699
     - user: puppet
     - group: puppet
 
