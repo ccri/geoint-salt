@@ -117,10 +117,10 @@ s3-puppet-modules:
     - user: puppet
     - group: puppet
 
-/etc/puppet/files/accumulo-1.6.4-bin.tar.gz:
+/etc/puppet/files/accumulo-1.7.2-bin.tar.gz:
   file.managed:
-    - source: s3://geoint-data/bootstrap/accumulo-1.6.4-bin.tar.gz
-    - source_hash: md5=530dfe488d5c2ee415b514ce72baa691
+    - source: s3://geoint-data/bootstrap/accumulo-1.7.2-bin.tar.gz
+    - source_hash: md5=de876f3f6df4a9659635378ae7df1b86
     - user: puppet
     - group: puppet
 
